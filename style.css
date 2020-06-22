@@ -2,4 +2,5 @@ img {
     width: 25%;
     display: flex;
     margin-top: 20px;
+    border-style: dashed;
 }
