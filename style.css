@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+}
+
 img {
     width: 25%;
     display: flex;
-    margin-top: 20px;
+    margin-top: 5px;
     border-style: dashed;
+}
+
+li {
+    margin-top: 20px;
 }

@@ -7,6 +7,7 @@ let options = {
 };
 
 let flags = document.querySelector('#list ul');
+let names = document.querySelector('.list p');
 
 fetch(endpoint, options)
     .then((response) => response.json())
@@ -14,11 +15,15 @@ fetch(endpoint, options)
         console.log(results);
         results.forEach((result) => {
             const li = document.createElement('li');
+            const p = document.createElement('p');
             const img = document.createElement('img');
+            const text = document.createTextNode(result.name);
 
             img.setAttribute('src', result.flag);
+            li.appendChild(text);
             li.appendChild(img);
             flags.appendChild(li);
+
 
         });
     })
